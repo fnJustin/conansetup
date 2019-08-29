@@ -1,6 +1,6 @@
 #install dev dools 6
-sudo yum install centos-release-scl
-sudo yum install devtoolset-6
+sudo yum -y install centos-release-scl
+sudo yum -y install devtoolset-6
 scl enable devtoolset-6 bash
 
 #install pip
@@ -14,7 +14,6 @@ pip install --user ninja
 pip install --user p4python
 
 #you may need to add some other devel packages depending on what you installed as you base centos config
-#e.g. for nuke i needed these on a vm image (software gl drivers)
-sudo yum install mesa-libGL-devel
-sudo yum install mesa-libGLU-devel
-sudo yum install alsa-lib-devel
+sudo yum -y install mesa-libGL-devel
+sudo yum -y install mesa-libGLU-devel
+sudo yum -y install alsa-lib-devel
